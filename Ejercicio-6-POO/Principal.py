@@ -10,8 +10,8 @@ while True:
     luces_auto.activar_luces(mov_detectado, es_turno_noche)
     habitacion.gestionar_luces(mov_detectado, es_turno_noche)
 
-    continuar = input("\n🔁 ¿Desea continuar usando el sistema? (s/n): ").strip().lower()
+    continuar = input("\n ¿Desea continuar usando el sistema? (s/n): ").strip().lower()
     if continuar != "s":
-        print("\n🛑 El sistema ha terminado su ejecución.")
+        print("\n El sistema ha terminado su ejecución.")
         break
     time.sleep(3)

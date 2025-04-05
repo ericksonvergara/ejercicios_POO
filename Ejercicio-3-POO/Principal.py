@@ -10,7 +10,7 @@ while True:
     resultado = calculadora_main.calcular(cliente)
     print(resultado)
 
-    continuar = input("\n🔁 ¿Quieres hacer otro cálculo? (s/n): ").strip().lower()
+    continuar = input("\n ¿Quieres hacer otro cálculo? (s/n): ").strip().lower()
     if continuar != "s":
-        print("👋 Gracias por usar la calculadora. ¡Hasta la próxima!")
+        print("Gracias por usar la calculadora. ¡Hasta la próxima!")
         break

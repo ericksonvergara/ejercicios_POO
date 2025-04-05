@@ -5,6 +5,6 @@ class Usuario:
     def solicitar_temperatura(self):
         while True:
             try:
-                return int(input("\n🌡️ Ingresa la temperatura actual del invernadero: "))
+                return int(input("\n Ingresa la temperatura actual del invernadero: "))
             except ValueError:
-                print("⚠️ Error: Por favor, introduce un número válido.")
+                print(" Error: Por favor, introduce un número válido.")

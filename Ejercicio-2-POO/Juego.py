@@ -32,11 +32,11 @@ class Juego:
 
     def continuar(self):
         try:
-            print("\n🔁 Menú de opciones:")
+            print("\n Menú de opciones:")
             print("1. Ingresar un número")
             print("2. Salir del programa")
             opcion = int(input("Selecciona una opción: "))
             return opcion
         except ValueError:
-            print("\n⚠️ Entrada inválida. Por favor, ingresa 1 o 2.")
+            print("\n Entrada inválida. Por favor, ingresa 1 o 2.")
             return self.continuar()

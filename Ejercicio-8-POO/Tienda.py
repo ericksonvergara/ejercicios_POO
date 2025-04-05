@@ -12,6 +12,6 @@ class SistemaAcceso:
     def validar_entrada(self, usuario):
         acceso_habilitado = self.dentro_horario()
         if usuario.membresia == "si" and acceso_habilitado or usuario.empleado == "si":
-            print(f"🔓 ACCESO CONCEDIDO: Bienvenid@ {usuario.nombre} al sistema.")
+            print(f"ACCESO CONCEDIDO: Bienvenid@ {usuario.nombre} al sistema.")
         else:
-            print(f"🔒 ACCESO RESTRINGIDO: Lo sentimos, {usuario.nombre}. No puedes ingresar en este momento.")
+            print(f"ACCESO RESTRINGIDO: Lo sentimos, {usuario.nombre}. No puedes ingresar en este momento.")

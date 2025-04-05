@@ -11,10 +11,10 @@ while True:
         s1, s2, s3, noche = detector_sensores.obtener_lecturas()
         sistema_alarma.activar_modo_automatico(s1, s2, s3, noche)
 
-        seguir = input("🔄 ¿Deseas seguir con el monitoreo? (s/n): ").lower()
+        seguir = input("¿Deseas seguir con el monitoreo? (s/n): ").lower()
         if seguir != "s":
-            print("🛑 Sistema finalizado. ¡Hasta luego!")
+            print("Sistema finalizado. ¡Hasta luego!")
             break
         time.sleep(3)
     except ValueError:
-        print("❌ Entrada inválida. Por favor elige una opción correcta.")
+        print("Entrada inválida. Por favor elige una opción correcta.")
